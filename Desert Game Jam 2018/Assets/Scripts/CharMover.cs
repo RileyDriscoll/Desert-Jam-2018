@@ -77,6 +77,7 @@ public class CharMover : MonoBehaviour
     {
 
         // Enabling Jump bool when Space is pressed
+        transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;

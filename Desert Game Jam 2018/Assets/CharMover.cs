@@ -12,10 +12,19 @@ public class CharMover : MonoBehaviour
     private bool foundFooting = false;
     private bool pulledDown = true;
     private Rigidbody2D rb;
+    private float scaleX;
+    private float scaleY;
+
+
+    private Animator animator;
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        scaleX = transform.localScale.x;
+        scaleY = transform.localScale.y;
+        animator = GetComponent<Animator>();
+
     }
     // adds force to jump upwards
     void GoUp()
@@ -95,15 +104,21 @@ public class CharMover : MonoBehaviour
             Vector3 vehicleposition = new Vector3(transform.position.x * Time.deltaTime, transform.position.y, transform.position.z);
             vehicleposition.x = transform.position.x + Speed / 100;
             transform.position = vehicleposition;
+            animator.Play("RunAnimation");
+            transform.localScale = new Vector2(scaleX, scaleY);
+            
 
         }
-
-        //Right movement thorough Left arrow key
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             Vector3 vehicleposition = new Vector3(transform.position.x * Time.deltaTime, transform.position.y, transform.position.z);
             vehicleposition.x = transform.position.x - Speed / 100;
             transform.position = vehicleposition;
+            animator.Play("RunAnimation");
+            transform.localScale = new Vector2(-scaleX, scaleY);
+        }
+        else {
+            animator.Play("IdleAnimation");
         }
 
     }

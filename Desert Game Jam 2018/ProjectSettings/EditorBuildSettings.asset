@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireLevel.unity
     guid: 55d2e14de05ab7b45a45aa286ea18ed9
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: af2d62f2a0d018b44aa4b6aad694101a

@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Testing.unity
-=======
-- path: Assets/Scenes/FireLevel.unity
->>>>>>> df422260713d5000c4c7200c5fc98452b951370c
   isLoaded: 1
   isActive: 1

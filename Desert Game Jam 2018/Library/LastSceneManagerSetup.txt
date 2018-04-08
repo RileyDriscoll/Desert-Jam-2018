@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/FireLevel.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Level0.unity
+=======
+- path: Assets/Scenes/LevelPlanning.unity
+>>>>>>> b7d446263149cf4ace36c3459dbd1166bfa3b294
+>>>>>>> 529a57096feac772541acaf73dc93100513b7df7
   isLoaded: 1
   isActive: 1

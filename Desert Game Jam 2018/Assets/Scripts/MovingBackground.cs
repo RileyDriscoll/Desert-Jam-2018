@@ -9,13 +9,16 @@ public class MovingBackground : MonoBehaviour {
     private float zPos;
     private float yPos;
     private float xPos;
-    private float offset;
+    public float offset;
+
+    private SpriteRenderer sren;
 
 	// Use this for initialization
 	void Start () {
         zPos = transform.position.z;
         yPos = transform.position.y;
-        offset = transform.position.x - mainCamera.transform.position.x;
+        sren = GetComponent < SpriteRenderer > ();
+        offset = (transform.position.x) / depth - mainCamera.transform.position.x;
         
 	}
 

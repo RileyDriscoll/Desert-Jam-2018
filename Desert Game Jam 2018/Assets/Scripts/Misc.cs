@@ -9,6 +9,7 @@ public class Misc : MonoBehaviour {
     public string levelname;
     void Awake()
     {
+		QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
     }
 

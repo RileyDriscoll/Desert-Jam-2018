@@ -990,6 +990,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114922133656619030, guid: e7b7b425db473aa43b2a7d82549f6bc3,
+        type: 2}
+      propertyPath: levelname
+      value: Tutorial
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7b7b425db473aa43b2a7d82549f6bc3, type: 2}
   m_IsPrefabParent: 0

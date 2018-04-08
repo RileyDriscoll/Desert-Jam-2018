@@ -9,14 +9,18 @@ public class Misc : MonoBehaviour {
     public string levelname;
     void Awake()
     {
+<<<<<<< HEAD
+        QualitySettings.vSyncCount = 0;  // VSync must be disabled
+=======
 		QualitySettings.vSyncCount = 0;
+>>>>>>> df422260713d5000c4c7200c5fc98452b951370c
         Application.targetFrameRate = 60;
     }
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

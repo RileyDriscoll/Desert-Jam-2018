@@ -16,6 +16,7 @@ public class CharMover : MonoBehaviour
     private float scaleY;
     private bool doubleJump;
     private bool inJump;
+    public bool dead;
 
 
     private Animator animator;
@@ -28,6 +29,7 @@ public class CharMover : MonoBehaviour
         animator = GetComponent<Animator>();
         doubleJump = false;
         inJump = false;
+        dead = false;
 
     }
     // adds force to jump upwards
@@ -96,7 +98,7 @@ public class CharMover : MonoBehaviour
         
 
         //Right movement thorough Right arrow key
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && !dead)
         {
             Vector3 vehicleposition = new Vector3(transform.position.x * Time.deltaTime, transform.position.y, transform.position.z);
             vehicleposition.x = transform.position.x + Speed / 100;
@@ -109,7 +111,7 @@ public class CharMover : MonoBehaviour
 
 
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && !dead)
         {
             Vector3 vehicleposition = new Vector3(transform.position.x * Time.deltaTime, transform.position.y, transform.position.z);
             vehicleposition.x = transform.position.x - Speed / 100;
@@ -124,14 +126,21 @@ public class CharMover : MonoBehaviour
         {
             if (foundFooting && !pulledDown)
             {
-                animator.Play("IdleAnimation");
+                if (!dead)
+                {
+                    animator.Play("IdleAnimation");
+                }
+               
             }
         }
 
-        // Enabling Jump bool when Space is pressed
-        transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+        if (dead) {
+            transform.rotation = new Quaternion(0,0,180,0);
+        }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Enabling Jump bool when Space is pressedw
+
+        if (Input.GetKeyDown(KeyCode.Space) && !dead)
         {
             isJumping = true;
         }

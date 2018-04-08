@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FireLevel.unity
+- path: Assets/Scenes/LevelPlanning.unity
   isLoaded: 1
   isActive: 1

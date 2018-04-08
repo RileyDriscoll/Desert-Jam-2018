@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 61502194086148422}
   - component: {fileID: 114487900862888468}
   - component: {fileID: 114835438366664788}
+  - component: {fileID: 114922133656619030}
   m_Layer: 0
   m_Name: Bastet
   m_TagString: Untagged
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892624399203652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: -2.36, z: 0}
+  m_LocalPosition: {x: -6.69, y: -2.39, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ac329c6822cf40a6f1432d25c8a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114922133656619030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892624399203652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf88e195894a074db2afd254d2ef9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelname: 
 --- !u!212 &212492182296719732
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -8,18 +8,23 @@ public class MovingBackground : MonoBehaviour {
     public GameObject mainCamera;
     private float zPos;
     private float yPos;
+    private float xPos;
+    private float offset;
 
 	// Use this for initialization
 	void Start () {
         zPos = transform.position.z;
         yPos = transform.position.y;
+        offset = transform.position.x - mainCamera.transform.position.x;
+        
 	}
 
     // Update is called once per frame
     void Update()
     {
+        
 
-        Vector3 vehicleposition = new Vector3(mainCamera.transform.position.x * depth, yPos, zPos);
+        Vector3 vehicleposition = new Vector3((mainCamera.transform.position.x + offset) * depth, yPos, zPos);
         transform.position = vehicleposition;
 
     }

@@ -10,7 +10,7 @@ public class CammeraFollow : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        offset = transform.position - player.transform.position;
+        offset = new Vector3(5, 3.5f, -10);//transform.position - player.transform.position;
     }
 
     // Update is called once per frame

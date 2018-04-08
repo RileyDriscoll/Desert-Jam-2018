@@ -134,8 +134,12 @@ public class CharMover : MonoBehaviour
             }
         }
 
-        if (dead) {
-            transform.rotation = new Quaternion(0,0,180,0);
+        if (dead)
+        {
+            transform.rotation = new Quaternion(0, 0, 180, 0);
+        }
+        else {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
         }
 
         // Enabling Jump bool when Space is pressedw

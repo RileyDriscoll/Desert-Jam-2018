@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 sceneSetups:
-- path: Assets/Scenes/Level0.unity
+- path: Assets/Scenes/FireLevel.unity
   isLoaded: 1
   isActive: 1
-=======
-sceneSetups: []
->>>>>>> 16b870a37d4a7dc5d42bcefb96887a1e09dd6121

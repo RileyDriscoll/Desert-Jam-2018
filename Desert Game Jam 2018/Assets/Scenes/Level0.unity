@@ -492,11 +492,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4380993787713476, guid: 4aa5b988af36a78418ca75981b5797d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.4313679
+      value: -6.54
       objectReference: {fileID: 0}
     - target: {fileID: 4380993787713476, guid: 4aa5b988af36a78418ca75981b5797d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.0504278
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 4380993787713476, guid: 4aa5b988af36a78418ca75981b5797d3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -764,7 +764,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4550088611368210, guid: e7b7b425db473aa43b2a7d82549f6bc3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.69
+      value: -6.04
       objectReference: {fileID: 0}
     - target: {fileID: 4550088611368210, guid: e7b7b425db473aa43b2a7d82549f6bc3, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1644,11 +1644,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.678608
+      value: -11.97
       objectReference: {fileID: 0}
     - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.680507
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1672,6 +1672,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969428380113116, guid: 45f6dadafddc38d4da3557f5eb272557, type: 2}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
